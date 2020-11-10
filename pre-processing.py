@@ -5,6 +5,7 @@
 
 import pandas
 
+
 risk_df = pandas.read_csv("data_raw.csv")
 
 #Subset the required columns
