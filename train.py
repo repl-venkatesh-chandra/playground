@@ -13,6 +13,11 @@ import matplotlib.pyplot as plt
 X = pandas.read_csv("X.csv")
 y = pandas.read_csv("y.csv")
 
+#Standardize the columns
+from sklearn.preprocessing import StandardScaler
+standardizer = StandardScaler()
+X_std = standardizer.fit_transform(X)
+
 #Split the train and test rows
 X_std_train, X_std_test, y_train, y_test= train_test_split (X_std, y, test_size = 0.33, random_state= 500)
 
