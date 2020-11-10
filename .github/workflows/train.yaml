@@ -1,4 +1,4 @@
-name: farmers
+name: Classification workflow
 on: [push]
 jobs:
   run:
