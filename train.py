@@ -35,7 +35,7 @@ recall = metrics.recall_score(y_test, y_test_pred, pos_label='good risk')
 
 #Save scores
 with open("metrics.txt", 'w') as outfile:
-    outfile.write("Accuracy %2.1f%%\n" % accuracy*100))
+    outfile.write("Accuracy %2.1f%%\n" % accuracy*100)
     outfile.write("Precision %2.1f%%\n" % precision*100)
     outfile.write("Recall %2.1f%%\n" % recall*100)
 
