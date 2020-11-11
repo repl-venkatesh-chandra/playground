@@ -45,7 +45,7 @@ with open("metrics.txt", 'w') as outfile:
 #Metrics diff
 
 # Now print to file
-with open("metrics_diff.json", 'w') as outfile:
+with open("metrics.json", 'w') as outfile:
 	json.dump({ "accuracy": accuracy, "precision": precision, "Recall":recall}, outfile)
 
 #Save confusion matrix
