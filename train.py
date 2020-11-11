@@ -12,7 +12,9 @@ import matplotlib.pyplot as plt
 import json
 
 X = pandas.read_csv("X.csv")
-y = pandas.read_csv("y.csv")
+y_df = pandas.read_csv("y.csv")
+
+y = y_df['risk']
 
 #Standardize the columns
 from sklearn.preprocessing import StandardScaler
