@@ -22,5 +22,5 @@ stages:
     outs:
     - confusion_matrix.png
     metrics:
-    - metrics_diff.json:
+    - metrics.json:
         cache: false
