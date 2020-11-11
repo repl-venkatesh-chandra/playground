@@ -4,4 +4,3 @@ scipy>=0.15.1
 scikit-learn==0.21.3
 matplotlib
 sklearn
-json
