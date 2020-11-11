@@ -13,5 +13,5 @@ X = risk_df.iloc[:,2:5]
 y = risk_df['risk']
 
 #Save output
-X.to_csv("X.csv")
-y.to_csv("y.csv")
+X.to_csv("X.csv", index=False)
+y.to_csv("y.csv", index=False)
