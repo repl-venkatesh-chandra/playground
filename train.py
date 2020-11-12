@@ -44,7 +44,7 @@ with open("metrics.txt", 'w') as outfile:
 	
 #Save parameters
 with open("params.txt", 'w') as outfile2:
-    outfile2.write("k = 6")
+    outfile2.write("k = 5")
 
 #Metrics diff
 
