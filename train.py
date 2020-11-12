@@ -26,7 +26,7 @@ X_std_train, X_std_test, y_train, y_test= train_test_split (X_std, y, test_size 
 
 #Build model
 from sklearn.neighbors import KNeighborsClassifier
-knn2 = KNeighborsClassifier(n_neighbors=4, p=2).fit(X_std_train,y_train)
+knn2 = KNeighborsClassifier(n_neighbors=5, p=2).fit(X_std_train,y_train)
 
 #Generate prediction
 y_test_pred = knn2.predict(X_std_test)
@@ -44,7 +44,7 @@ with open("metrics.txt", 'w') as outfile:
 	
 #Save parameters
 with open("params.txt", 'w') as outfile2:
-    outfile2.write("k = 4")
+    outfile2.write("k = 5")
 
 #Metrics diff
 
