@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-@author: vchan 
+@author: vchan
 """
 
 from sklearn.neighbors import KNeighborsClassifier
@@ -44,7 +44,7 @@ with open("metrics.txt", 'w') as outfile:
 	
 #Save parameters
 with open("params.txt", 'w') as outfile2:
-    outfile2.write("k = 5")
+    outfile2.write("k = 6")
 
 #Metrics diff
 
