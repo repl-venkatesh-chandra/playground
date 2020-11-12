@@ -24,12 +24,12 @@ X_std = standardizer.fit_transform(X)
 #Split the train and test rows
 X_std_train, X_std_test, y_train, y_test= train_test_split (X_std, y, test_size = 0.33, random_state= 500)
 
+#paramters
+k=4
+
 #Build model
 from sklearn.neighbors import KNeighborsClassifier
-knn2 = KNeighborsClassifier(n_neighbors=3, p=2).fit(X_std_train,y_train)
-
-#paramters
-k=3
+knn2 = KNeighborsClassifier(n_neighbors=k, p=2).fit(X_std_train,y_train)
 
 #Generate prediction
 y_test_pred = knn2.predict(X_std_test)
