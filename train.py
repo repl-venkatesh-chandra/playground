@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-@author: vchan
+@author: vchan 
 """
 
 from sklearn.neighbors import KNeighborsClassifier
