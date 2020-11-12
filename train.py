@@ -26,7 +26,7 @@ X_std_train, X_std_test, y_train, y_test= train_test_split (X_std, y, test_size 
 
 #Build model
 from sklearn.neighbors import KNeighborsClassifier
-knn2 = KNeighborsClassifier(n_neighbors=3, p=2).fit(X_std_train,y_train)
+knn2 = KNeighborsClassifier(n_neighbors=2, p=2).fit(X_std_train,y_train)
 
 #Generate prediction
 y_test_pred = knn2.predict(X_std_test)
@@ -65,7 +65,3 @@ plt.ylabel('True')
 
 plt.savefig("confusion_matrix.png",dpi=120) 
 plt.close()
-
-
-
-
