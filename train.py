@@ -41,6 +41,7 @@ with open("metrics.txt", 'w') as outfile:
     outfile.write("Accuracy %5.3f%%\n" % accuracy)
     outfile.write("Precision %5.3f%%\n" % precision)
     outfile.write("Recall %5.3f%%\n" % recall)
+    outfile.write("k-5")
 
 #Metrics diff
 
