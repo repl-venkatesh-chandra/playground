@@ -15,7 +15,9 @@ jobs:
           git fetch --prune
           dvc metrics diff --show-md main > report.md
           
-
+          # Add metrics as of this commit
+          echo "## Model Parameters" > report.md
+          cat parameters.txt > report.md
           
           # Add figure to the report
           echo "## Validating results by region"
