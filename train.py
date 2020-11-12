@@ -43,7 +43,7 @@ with open("metrics.txt", 'w') as outfile:
     outfile.write("Recall %5.3f%%\n" % recall)
 	
 #Save parameters
-with open("parameters.txt", 'w') as outfile:
+with open("params.txt", 'w') as outfile:
     outfile.write("k = 3")
 
 #Metrics diff
