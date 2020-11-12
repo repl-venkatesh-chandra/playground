@@ -20,6 +20,7 @@ jobs:
           cat params.txt >> report.md
           
           # Add figure to the report
-          echo "## Confusion maitrx \n" >> report.md
+          echo "\n" >> report.md
+          echo "## Confusion matrix\n" >> report.md
           cml-publish confusion_matrix.png --md >> report.md
           cml-send-comment report.md
