@@ -17,8 +17,10 @@ stages:
     cmd: python train.py
     deps:
     - train.py
-    - X.csv
-    - y.csv
+    - X.csv:
+        cache: false
+    - y.csv:
+        cache: false
     outs:
     - confusion_matrix.png
     metrics:
