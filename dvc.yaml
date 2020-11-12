@@ -21,6 +21,7 @@ stages:
     - y.csv
     outs:
     - confusion_matrix.png
+    - parameters.txt
     metrics:
     - metrics.json:
         cache: false

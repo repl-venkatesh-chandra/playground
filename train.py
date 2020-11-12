@@ -28,6 +28,9 @@ X_std_train, X_std_test, y_train, y_test= train_test_split (X_std, y, test_size 
 from sklearn.neighbors import KNeighborsClassifier
 knn2 = KNeighborsClassifier(n_neighbors=3, p=2).fit(X_std_train,y_train)
 
+#paramters
+k=3
+
 #Generate prediction
 y_test_pred = knn2.predict(X_std_test)
 
@@ -41,6 +44,10 @@ with open("metrics.txt", 'w') as outfile:
     outfile.write("Accuracy %5.3f%%\n" % accuracy)
     outfile.write("Precision %5.3f%%\n" % precision)
     outfile.write("Recall %5.3f%%\n" % recall)
+	
+#Save parameters
+with open("parameters.txt", 'w') as outfile:
+    outfile.write("k = {}".format(k))
 
 #Metrics diff
 

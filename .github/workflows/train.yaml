@@ -19,5 +19,6 @@ jobs:
           
           # Add figure to the report
           echo "## Validating results by region"
+          cml-publish parameters.txt --md >>report.md
           cml-publish confusion_matrix.png --md >> report.md
           cml-send-comment report.md
