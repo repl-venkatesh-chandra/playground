@@ -24,12 +24,9 @@ X_std = standardizer.fit_transform(X)
 #Split the train and test rows
 X_std_train, X_std_test, y_train, y_test= train_test_split (X_std, y, test_size = 0.33, random_state= 500)
 
-#paramters
-k=3
-
 #Build model
 from sklearn.neighbors import KNeighborsClassifier
-knn2 = KNeighborsClassifier(n_neighbors=k, p=2).fit(X_std_train,y_train)
+knn2 = KNeighborsClassifier(n_neighbors=3, p=2).fit(X_std_train,y_train)
 
 #Generate prediction
 y_test_pred = knn2.predict(X_std_test)
@@ -47,7 +44,7 @@ with open("metrics.txt", 'w') as outfile:
 	
 #Save parameters
 with open("parameters.txt", 'w') as outfile:
-    outfile.write("k = {}".format(k))
+    outfile.write("k = 3")
 
 #Metrics diff
 
