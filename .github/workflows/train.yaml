@@ -16,10 +16,10 @@ jobs:
           dvc metrics diff --show-md main > report.md
           
           # Add metrics as of this commit
-          echo "## Model Parameters" > report.md
-          cml-cat params.txt > report.md
+          echo "## Model Parameters\n" >> report.md
+          cat params.txt >> report.md
           
           # Add figure to the report
-          echo "## Validating results by region"
+          echo "## Confusion maitrx \n" >> report.md
           cml-publish confusion_matrix.png --md >> report.md
           cml-send-comment report.md
